@@ -1,0 +1,50 @@
+/*1-4 10 14-19 34-35 AmountStatusView
+5-9  20-26 29-33 36 WithdrawStatusView
+25，显示等待放款
+26显示立即提现
+11-13  37-39 BillStatusView
+11,12,13暂时注释，不会用到
+6、20注释，不用
+
+
+NO_AMOUNT(1, "暂无额度"),
+AMOUNT_VERIFY(2, "额度审批中"),
+AMOUNT_INVALID(3, "额度失效"),
+FAILED_TO_AMOUNT(4, "未能获取额度"),
+APPLY_WAIT(5, "请在30日内提现"),
+//DRAW_APPLY(6, "提现申请中"),
+DRAW_WAIT_PHONE(7, "提现申请已提交等待电审中"),
+DRAW_BANKCARD(8, "提现中，请留意银行卡信息"),
+DRAW_PHONE_FAILED(9, "电审未通过"),
+DRAW_SIGN_FAILED(10, "签名未通过"),
+//REPAYMENT_DAYS(11, "近7日需还款元"),
+//DEBIT_FAILED(12, "本期账单扣款失败"),
+//REPAYMENT_OVERDUE(13, "有逾期账单请及时还款"),
+ANTS_CHANT_FLOWERS(14, "蚂蚁花呗"),
+SESAME_INFO(15, "芝麻授信"),
+BASE_INFO(16, "基本信息"),
+IDENTITY_INFO(17, "身份认证"),
+CREDIT_INFO(18, "机构征信"),
+CREDIT_NETWORK(19, "网络征信"),
+//DRAW_INFO(20, "提款申请"),
+BANKCARD_INFO(21, "银行卡填写"),
+DRAW_SIGN(22, "提现合同填写"),
+DRAW_SIGN_PASS(23, "签名通过"),
+DRAW_PHONE_PASS(24, "电审通过"),
+DRAW_MONEY_SUCCESS(25, "已放款"),
+DRAW_MONEY_FAILED(26, "已解约"),
+//        REPAYMENT_MONEY_LOANING(27, "放款中"),
+//        REPAYMENT_WAITING(28, "还款中,请耐心等待"),
+//还款状态
+REPAYMENT_NOT_PAY(29, "已放款,尚未还款"),
+REPAYMENT_IN_PAY(30, "还款中"),
+REPAYMENT_PAY_OVER(31, "还款完成"),
+DRAW_LOCK_ORDER(32, "锁单"),
+APPLY_WAIT_NEXT(33, "再贷"),
+APPLY_SIGN_PASS(34, "征信-签名通过"),
+APPLY_SIGN_NOT_PASS(35, "征信-签名未通过"),
+REPAYMENT_NORMAL_DOING(36, "正常还款中"),
+REPAYMENT_OVERDATE_NOT(37, "逾期未还款"),
+REPAYMENT_OVERDATE_DOING(38, "逾期还款中"),
+REPAYMENT_CLOAN_DOING(39, "提前清贷中");
+*/

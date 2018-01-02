@@ -1,0 +1,8 @@
+//
+//  Common.xcconfig
+//  JieLeHua
+//
+//  Created by pingyandong on 2017/6/15.
+//  Copyright © 2017年 Vcredit. All rights reserved.
+//
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) REQUEST_BASE_URL='$(REQUEST_BASE_URL)' AGREEMENT_BASE_URL='$(AGREEMENT_BASE_URL)' H5_BASE_URL='$(H5_BASE_URL)' UmengAppkey='$(UmengAppkey)' WeChatKey='$(WeChatKey)' WeChatSecret='$(WeChatSecret)' BaiduMobKey='$(BaiduMobKey)' CLIENTID='$(CLIENTID)'  SECRET='$(SECRET)' APPSCHEM='$(APPSCHEM)' APPID='$(APPID)'

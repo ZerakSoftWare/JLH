@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pay Vip View Controller-->
+        <scene sceneID="C4K-Fr-rq1">
+            <objects>
+                <viewController storyboardIdentifier="JJPayVipViewController" id="lcH-U5-Bm3" customClass="JJPayVipViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Lq-5p-JXd"/>
+                        <viewControllerLayoutGuide type="bottom" id="cpw-DJ-IaS"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Vs-Gc-UJX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LEm-A0-ch6">
+                                <rect key="frame" x="34" y="126.5" width="307" height="414"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_home_lexiang" translatesAutoresizingMaskIntoConstraints="NO" id="fZD-nI-ZEl">
+                                        <rect key="frame" x="0.0" y="0.0" width="307" height="106"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="106" id="otk-kq-Qck"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="借乐花优享会员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byf-ng-GdC">
+                                        <rect key="frame" x="90" y="18.5" width="128.5" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="25" id="ird-oo-fdu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="特权享不停" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Sx-MC-2b0">
+                                        <rect key="frame" x="87.5" y="53" width="132" height="36.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36.5" id="Vig-8A-eoG"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CV2-GO-RLc">
+                                        <rect key="frame" x="45.5" y="118" width="66" height="54"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="55L-7w-437"/>
+                                            <constraint firstAttribute="width" constant="66" id="bvP-6z-esS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="-20" maxX="0.0" maxY="-44"/>
+                                        <inset key="imageEdgeInsets" minX="18" minY="-24" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="优先审批" image="icon_home_first">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gjo-6u-OTg">
+                                        <rect key="frame" x="45.5" y="180" width="66" height="54"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="Q6Y-Sz-Uo8"/>
+                                            <constraint firstAttribute="width" constant="66" id="yYH-vp-uAf"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="-20" maxX="0.0" maxY="-44"/>
+                                        <inset key="imageEdgeInsets" minX="18" minY="-24" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="无条件再贷" image="icon_home_first">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xIH-9D-Syp">
+                                        <rect key="frame" x="45.5" y="242" width="66" height="54"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="39K-KL-fzf"/>
+                                            <constraint firstAttribute="height" constant="54" id="MCK-wF-hLQ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="-20" maxX="0.0" maxY="-44"/>
+                                        <inset key="imageEdgeInsets" minX="18" minY="-24" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="费用抵扣券" image="icon_home_first">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5uR-Ip-S2k">
+                                        <rect key="frame" x="195.5" y="118.5" width="66" height="54"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="eps-Fd-MTH"/>
+                                            <constraint firstAttribute="width" constant="66" id="uDV-Py-Tz4"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="-20" maxX="0.0" maxY="-44"/>
+                                        <inset key="imageEdgeInsets" minX="18" minY="-24" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="随时提额" image="icon_home_first">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LQc-BG-adF">
+                                        <rect key="frame" x="195.5" y="180.5" width="66" height="54"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="54" id="Gn9-AM-2so"/>
+                                            <constraint firstAttribute="width" constant="66" id="gzW-eY-x2x"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="-20" maxX="0.0" maxY="-44"/>
+                                        <inset key="imageEdgeInsets" minX="18" minY="-24" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="专属客服" image="icon_home_first">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7YK-EN-WgR">
+                                        <rect key="frame" x="195.5" y="242.5" width="66" height="54"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="66" id="mQ3-3k-Lj1"/>
+                                            <constraint firstAttribute="height" constant="54" id="tqh-qX-YQu"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <inset key="titleEdgeInsets" minX="-20" minY="-20" maxX="0.0" maxY="-44"/>
+                                        <inset key="imageEdgeInsets" minX="18" minY="-24" maxX="0.0" maxY="0.0"/>
+                                        <state key="normal" title="会员大礼包" image="icon_home_first">
+                                            <color key="titleColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EbM-hd-fhe">
+                                        <rect key="frame" x="76.5" y="317.5" width="154.5" height="22.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="22.5" id="dGL-fT-zYF"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="会员专属">
+                                                <attributes>
+                                                    <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="6">
+                                                <attributes>
+                                                    <color key="NSColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <font key="NSFont" metaFont="system"/>
+                                                </attributes>
+                                            </fragment>
+                                            <fragment content="大特权等着你！">
+                                                <attributes>
+                                                    <font key="NSFont" size="13" name=".PingFangSC-Regular"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f08-fO-paa">
+                                        <rect key="frame" x="36" y="350" width="235" height="52"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="52" id="aUl-Y6-ix9"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="立即加入" backgroundImage="btn_home_repayment"/>
+                                        <connections>
+                                            <action selector="payVipAction:" destination="lcH-U5-Bm3" eventType="touchUpInside" id="zK2-Cm-UWU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="f08-fO-paa" secondAttribute="bottom" constant="12" id="1x0-kf-2Kv"/>
+                                    <constraint firstItem="LQc-BG-adF" firstAttribute="top" secondItem="5uR-Ip-S2k" secondAttribute="bottom" constant="8" id="25p-ko-wHk"/>
+                                    <constraint firstItem="CV2-GO-RLc" firstAttribute="top" secondItem="fZD-nI-ZEl" secondAttribute="bottom" constant="12" id="3ta-Yd-uB4"/>
+                                    <constraint firstItem="xIH-9D-Syp" firstAttribute="trailing" secondItem="CV2-GO-RLc" secondAttribute="trailing" id="4Vy-WU-hzn"/>
+                                    <constraint firstAttribute="trailing" secondItem="f08-fO-paa" secondAttribute="trailing" constant="36" id="4wF-2d-TaZ"/>
+                                    <constraint firstItem="fZD-nI-ZEl" firstAttribute="leading" secondItem="LEm-A0-ch6" secondAttribute="leading" id="6cO-RD-Brf"/>
+                                    <constraint firstItem="fZD-nI-ZEl" firstAttribute="top" secondItem="LEm-A0-ch6" secondAttribute="top" id="9T8-gg-vjm"/>
+                                    <constraint firstItem="7YK-EN-WgR" firstAttribute="top" secondItem="LQc-BG-adF" secondAttribute="bottom" constant="8" id="CjM-9R-rkO"/>
+                                    <constraint firstItem="CV2-GO-RLc" firstAttribute="centerX" secondItem="LEm-A0-ch6" secondAttribute="centerX" constant="-75" id="CvM-kN-WUW"/>
+                                    <constraint firstItem="gjo-6u-OTg" firstAttribute="trailing" secondItem="CV2-GO-RLc" secondAttribute="trailing" id="D5Y-y4-Ehr"/>
+                                    <constraint firstItem="2Sx-MC-2b0" firstAttribute="centerX" secondItem="LEm-A0-ch6" secondAttribute="centerX" id="EkK-OV-whK"/>
+                                    <constraint firstItem="2Sx-MC-2b0" firstAttribute="top" secondItem="byf-ng-GdC" secondAttribute="bottom" constant="9.5" id="IZe-lP-X5E"/>
+                                    <constraint firstItem="xIH-9D-Syp" firstAttribute="top" secondItem="gjo-6u-OTg" secondAttribute="bottom" constant="8" id="KOx-B5-m1g"/>
+                                    <constraint firstItem="LQc-BG-adF" firstAttribute="leading" secondItem="5uR-Ip-S2k" secondAttribute="leading" id="MZm-gs-ouh"/>
+                                    <constraint firstAttribute="height" constant="414" id="PG8-Jx-6e3"/>
+                                    <constraint firstItem="f08-fO-paa" firstAttribute="top" secondItem="EbM-hd-fhe" secondAttribute="bottom" constant="10" id="YU4-Cm-VYw"/>
+                                    <constraint firstItem="7YK-EN-WgR" firstAttribute="leading" secondItem="5uR-Ip-S2k" secondAttribute="leading" id="awW-b6-dal"/>
+                                    <constraint firstItem="f08-fO-paa" firstAttribute="leading" secondItem="LEm-A0-ch6" secondAttribute="leading" constant="36" id="d4Z-bo-1mV"/>
+                                    <constraint firstItem="byf-ng-GdC" firstAttribute="centerX" secondItem="LEm-A0-ch6" secondAttribute="centerX" id="iES-4g-Hi9"/>
+                                    <constraint firstItem="gjo-6u-OTg" firstAttribute="top" secondItem="CV2-GO-RLc" secondAttribute="bottom" constant="8" id="jOj-Mb-xGy"/>
+                                    <constraint firstAttribute="width" constant="307" id="lKs-Iu-c0u"/>
+                                    <constraint firstItem="5uR-Ip-S2k" firstAttribute="centerX" secondItem="LEm-A0-ch6" secondAttribute="centerX" constant="75" id="ovN-vw-PaK"/>
+                                    <constraint firstItem="EbM-hd-fhe" firstAttribute="centerX" secondItem="LEm-A0-ch6" secondAttribute="centerX" id="v4i-Uu-q4b"/>
+                                    <constraint firstAttribute="trailing" secondItem="fZD-nI-ZEl" secondAttribute="trailing" id="xh9-mk-95W"/>
+                                    <constraint firstItem="5uR-Ip-S2k" firstAttribute="top" secondItem="fZD-nI-ZEl" secondAttribute="bottom" constant="12" id="yDd-d4-OP6"/>
+                                    <constraint firstItem="byf-ng-GdC" firstAttribute="top" secondItem="LEm-A0-ch6" secondAttribute="top" constant="18.5" id="yvF-nY-eKj"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <real key="value" value="9.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ehd-2l-KJP">
+                                <rect key="frame" x="154" y="540.5" width="67" height="67"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="67" id="jun-dv-M7u"/>
+                                    <constraint firstAttribute="height" constant="67" id="nmY-eo-rgp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <state key="normal" image="icon_home_img_home_lexiang_close"/>
+                                <connections>
+                                    <action selector="cancelPay:" destination="lcH-U5-Bm3" eventType="touchUpInside" id="erB-2X-SQ5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="LEm-A0-ch6" firstAttribute="centerX" secondItem="9Vs-Gc-UJX" secondAttribute="centerX" id="2UV-6M-9qz"/>
+                            <constraint firstItem="CV2-GO-RLc" firstAttribute="centerX" secondItem="9Vs-Gc-UJX" secondAttribute="centerX" constant="-75" id="9PV-SM-glF"/>
+                            <constraint firstItem="xIH-9D-Syp" firstAttribute="top" secondItem="gjo-6u-OTg" secondAttribute="bottom" constant="8" id="A8N-3W-j6I"/>
+                            <constraint firstItem="gjo-6u-OTg" firstAttribute="top" secondItem="CV2-GO-RLc" secondAttribute="bottom" constant="8" id="Hte-vl-Al2"/>
+                            <constraint firstItem="xIH-9D-Syp" firstAttribute="trailing" secondItem="CV2-GO-RLc" secondAttribute="trailing" id="Mo8-dC-Tbb"/>
+                            <constraint firstItem="gjo-6u-OTg" firstAttribute="trailing" secondItem="CV2-GO-RLc" secondAttribute="trailing" id="QYF-70-oa9"/>
+                            <constraint firstItem="ehd-2l-KJP" firstAttribute="top" secondItem="LEm-A0-ch6" secondAttribute="bottom" id="Skm-eM-Pvg"/>
+                            <constraint firstItem="LEm-A0-ch6" firstAttribute="centerY" secondItem="9Vs-Gc-UJX" secondAttribute="centerY" id="hFM-NO-fYn"/>
+                            <constraint firstItem="ehd-2l-KJP" firstAttribute="centerX" secondItem="9Vs-Gc-UJX" secondAttribute="centerX" id="iCm-OJ-xyO"/>
+                            <constraint firstItem="CV2-GO-RLc" firstAttribute="top" secondItem="fZD-nI-ZEl" secondAttribute="bottom" constant="12" id="kNI-Yw-FHC"/>
+                        </constraints>
+                    </view>
+                    <modalFormSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GQp-aH-DLJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="301.60000000000002" y="-23.838080959520241"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_home_repayment" width="125" height="27"/>
+        <image name="icon_home_first" width="24" height="25"/>
+        <image name="icon_home_img_home_lexiang_close" width="33" height="33"/>
+        <image name="img_home_lexiang" width="307" height="106"/>
+    </resources>
+</document>

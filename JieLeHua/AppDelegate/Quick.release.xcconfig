@@ -1,0 +1,42 @@
+//
+//  Quick.release.xcconfig
+//  JieLeHua
+//
+//  Created by pingyandong on 2017/6/15.
+//  Copyright © 2017年 Vcredit. All rights reserved.
+//
+#include "Pods/Target Support Files/Pods-JieLeHuaQuick/Pods-JieLeHuaQuick.release.xcconfig"
+
+//网络请求baseurl
+
+REQUEST_BASE_URL = @"http:\/\/jielehua.vcash.cn/api/jlh"
+
+AGREEMENT_BASE_URL = @"http:\/\/xxxx/resource/product/agrHtml?prdCode="
+
+H5_BASE_URL = @"http://xxxx"
+
+SECRET = @"xxxxxx"
+
+CLIENTID = @"xxxxx"
+
+//App
+
+APPSCHEM = @"cn.com.xxx.zkp"
+
+APPID = @"xxxxxx"
+
+//友盟配置
+
+UmengAppkey = @"xxxxxxxxxxxxxxxxxxx"
+
+//百度统计
+
+BaiduMobKey = @"xxxxxxxxxxxxxxx"
+
+//微信
+
+WeChatKey = @"xxxxxxxxxxxxx"
+
+WeChatSecret = @"xxxxxxxxxxxxxxxxxxxx"
+
+#include "Common.xcconfig"

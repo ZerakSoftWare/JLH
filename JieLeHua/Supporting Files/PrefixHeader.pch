@@ -1,0 +1,115 @@
+//
+//  PrefixHeader.pch
+//  JieLeHua
+//
+//  Created by YuZhongqi on 16/12/23.
+//  Copyright © 2016年 Vcredict. All rights reserved.
+//
+
+#ifndef PrefixHeader_h
+#define PrefixHeader_h
+#ifdef __OBJC__
+
+#import <HelpDesk/HelpDesk.h>
+#import "HelpDeskUI.h"
+#import "SCLoginManager.h"
+
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
+#import "UIView+FLExtension.h"
+
+/**
+ *  Macros <app里面定义的常量和宏>
+ */
+#import "VVCashMacros.h"
+#import "JLHGlobalDefineMacro.h"
+
+/**
+ *  BaseView
+ */
+#import "VVAlertView.h"
+#import "VVAlertUtils.h"
+#import "VVViewUtils.h"
+#import "VVCommonButton.h"
+#import "VVCommonTextField.h"
+/**
+ *  BaseData
+ */
+#import "VVGlobleData.h"
+/**
+ *  category
+ */
+#import "NSString+Base64.h"
+#import "NSData+Base64.h"
+#import "UIView+MJ.h"
+#import "UIColor+HEX.h"
+#import "UITableViewCell+Nib.h"
+#import "UIImage+GIF.h"
+#import "UIButton+BackgroundColor.h"
+#import "UIView+Toast.h"
+
+/**
+ *   Utility <工具类>
+ */
+#import "VLToast.h"
+#import "VVCommonFunc.h"
+#import "VVNetInit.h"
+#import "VVNetWorkTool.h"
+#import "VVNetWorkUtility.h"
+#import "KZNetworking.h"
+#import "JJConstUrl.h"
+
+#import "VVNoNetworkingView.h"
+#import "VVReachabilityTool.h"
+#import "VVUploadParams.h"
+#import "VVUtils.h"
+#import "NSData+Base64.h"
+#import "AESCrypt.h"
+#import "VVExNSString.h"
+#import "VVPathUtils+Database.h"
+#import <CocoaLumberjack/CocoaLumberjack.h>
+/**
+ *  Pod <cocoapod 安装的第三方库>
+ */
+#import <Masonry/Masonry.h>
+#import <MJExtension/MJExtension.h>
+#import <AFNetworking/AFNetworking.h>
+#import <Reachability/Reachability.h>
+#import <IQKeyboardManager/IQKeyboardManager.h>
+#import "JCRouter.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+
+#import "UserModel.h"
+#import "MBProgressHUD+BWMExtension.h"
+#import "MBProgressHUD+NJ.h"
+
+#import "NSDictionary+Category.h"
+#import "NSArray+Category.h"
+#import "NSMutableArray+Category.h"
+#import "NSMutableDictionary+Category.h"
+
+/**
+ *  环信客服
+ */
+//#import <HelpDesk/HelpDesk.h>
+//#import "HelpDeskUI.h"
+
+/**
+ *  友盟统计
+ */
+#import "UMMobClick/MobClick.h"
+
+/**
+ *  Debug
+ */
+#import "VVDebug.h"
+
+#import "AppNavigationController.h"
+
+#if DEBUG
+#import "FLEXManager.h"
+#endif
+
+//#import "FMDeviceManager.h"
+#endif
+#endif /* PrefixHeader_h */

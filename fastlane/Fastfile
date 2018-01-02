@@ -1,0 +1,117 @@
+# Customise this file, documentation can be found here:
+# https://github.com/fastlane/fastlane/tree/master/fastlane/docs
+# All available actions: https://docs.fastlane.tools/actions
+# can also be listed using the `fastlane actions` command
+
+# Change the syntax highlighting to Ruby
+# All lines starting with a # are ignored when running `fastlane`
+
+# If you want to automatically update fastlane if a new version is available:
+# update_fastlane
+
+# This is the minimum version number required.
+# Update this, if you use features of a newer version
+fastlane_version "2.24.0"
+
+default_platform :ios
+
+platform :ios do
+  before_all do
+    # ENV["SLACK_URL"] = "https://hooks.slack.com/services/..."
+      cocoapods(use_bundle_exec: false)
+    
+  end
+
+  desc "Runs all the tests"
+  lane :test do
+    scan
+  end
+
+
+  desc "把项目编译打包成.ipa上传到fir"
+  lane :fir do
+    scheme="JieLeHua"
+    fir_token= "9b53d3b63b3be9e3de28818f032119a3"
+    ipa_path = “~/Desktop/" + Time.now.strftime("%Y-%m-%d")
+    ipa_name = ""+scheme+".ipa"
+    gym(
+      workspace: ""+scheme+".xcworkspace",
+      scheme: scheme,
+      clean: true,
+      configuration: "Debug",
+      export_method: 'development',
+      # both of these flags are required for development
+      # include_bitcode: true,
+      # include_symbols: false,
+      archive_path: ipa_path+"/"+scheme,
+      output_directory: ipa_path,
+      output_name: ipa_name,
+      # use_legacy_build_api: true
+    )
+    outipa_path = ipa_path+"/"+scheme+".ipa"
+    say outipa_path
+    say fir_token
+    sh "fir publish "+outipa_path+" -T "+fir_token+" -c $1"
+  end
+
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    # match(type: "appstore") # more information: https://codesigning.guide
+    gym(scheme: "JieLeHua") # Build your app - more options available
+    pilot
+
+    # sh "your_script.sh"
+    # You can also use other beta testing services here (run `fastlane actions`)
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    # match(type: "appstore")
+    # snapshot
+    gym(scheme: "JieLeHua”,workspace: "JieLeHua.xcworkspace") # Build your app - more options available
+    deliver(force: true)
+    # frameit
+  end
+
+  lane :release11 do |option|
+	#根据传入参数version设置app的版本号
+	increment_version_number(version_number: option[:version]) 
+	#自动增加build号
+	increment_build_number
+    #证书签名
+    sigh
+    #编译打包
+    scheme_name = option[:scheme]
+    configuration = 'Release'
+    version = get_info_plist_value(path: "./#{scheme_name}/Info.plist", key: "CFBundleShortVersionString")
+    build = get_info_plist_value(path: "./#{scheme_name}/Info.plist", key: "CFBundleVersion")
+    output_directory = File.expand_path("..", Dir.pwd) + File::Separator + 'build'
+    output_name = "#{scheme_name}_#{configuration}_#{version}_#{build}_#{Time.now.strftime('%Y%m%d%H%M%S')}.ipa"
+    gym(scheme: scheme_name, clean: true, export_method:'appstore', configuration: configuration, output_directory: output_directory, output_name: output_name)
+  end
+
+  # You can define as many lanes as you want
+
+  after_all do |lane|
+    # This block is called, only if the executed lane was successful
+
+    # slack(
+    #   message: "Successfully deployed new App Update."
+    # )
+  end
+
+  error do |lane, exception|
+    # slack(
+    #   message: exception.message,
+    #   success: false
+    # )
+  end
+end
+
+
+# More information about multiple platforms in fastlane: https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Platforms.md
+# All available actions: https://docs.fastlane.tools/actions
+
+# fastlane reports which actions are used
+# No personal data is recorded. Learn more at https://github.com/fastlane/enhancer
